@@ -1,0 +1,53 @@
+.imageClipPath {
+  clip-path: inset(0 0 0 0);
+}
+
+.showAnim {
+  position: relative;
+  animation: rev-show-main 2s ease forwards;
+  -webkit-animation: rev-show-main 2s ease forwards;
+
+  &:after {
+    content: '';
+    position: absolute;
+    animation: rev-show-block 2s ease forwards;
+    -webkit-animation: rev-show-block 2s ease forwards;
+    background: var(--color-secondary);
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    height: 100%;
+  }
+}
+
+@keyframes rev-show-main {
+  0% {
+    color: transparent;
+  }
+
+  49% {
+    color: transparent;
+  }
+
+  50% {
+    color: #fff;
+    color: var(--color-primary);
+  }
+}
+
+@keyframes rev-show-block {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+
+  50% {
+    left: 0%;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
