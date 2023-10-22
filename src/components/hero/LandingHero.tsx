@@ -3,7 +3,7 @@ import styles from './hero.module.scss'
 import Image from 'next/image'
 import { getImage } from '@/utils/utils'
 
-const imageSrc = '/images/hero1.jpg'
+const imageSrc = '/images/imagine_fundal.jpg'
 const LandingHero = async ({ text }: { text: string }) => {
   const { base64, img } = await getImage(imageSrc)
   return (

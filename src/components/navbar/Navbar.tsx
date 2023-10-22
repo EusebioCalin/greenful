@@ -2,6 +2,7 @@
 import { Disclosure } from '@headlessui/react'
 import { useEffect, useState } from 'react'
 import Button from '@/components/button/AppButton'
+import Image from 'next/image'
 
 const Navbar = () => {
   const navigation = ['About', 'FAQS', 'Contact']
@@ -51,7 +52,7 @@ const Navbar = () => {
                   }}
                 >
                   <span className='flex items-center space-x-2 text-3xl pb-2 font-medium hover:text-color-primary'>
-                    <span>Greenful</span>
+                    <Image src='/images/logo.png' alt='' width={150} height={100} />
                   </span>
                 </div>
 

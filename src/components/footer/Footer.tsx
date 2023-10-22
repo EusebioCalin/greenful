@@ -1,19 +1,19 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
-  const navigation = ['Coaching', 'FAQs']
+  const navigation = ['About', 'FAQs']
   return (
     <div id='contact' className='relative w-full border-t pt-10 mt-5 px-4 md:px-0'>
       <div className='grid max-w-screen-xl grid-cols-1 gap-6 md:gap-10 mx-auto border-gray-100 dark:border-trueGray-700 lg:grid-cols-4 items-center lg:place-items-center'>
         <div className='lg:col-span-1'>
           <div>
-            {' '}
             <Link
               href='/'
               className='flex items-center space-x-2 text-2xl ml-4 font-medium text-black hover:text-color-primary focus:text-color-secondary'
             >
-              <span>Greenful</span>
+              <Image src='/images/logo.png' alt='' width={150} height={100} />
             </Link>
           </div>
         </div>
