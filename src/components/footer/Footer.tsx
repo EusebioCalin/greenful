@@ -3,16 +3,13 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
-  const navigation = ['About', 'FAQs']
+  const navigation = ['Despre', 'FAQs']
   return (
     <div id='contact' className='relative w-full border-t pt-10 mt-5 px-4 md:px-0'>
       <div className='grid max-w-screen-xl grid-cols-1 gap-6 md:gap-10 mx-auto border-gray-100 dark:border-trueGray-700 lg:grid-cols-4 items-center lg:place-items-center'>
         <div className='lg:col-span-1'>
           <div>
-            <Link
-              href='/'
-              className='flex items-center space-x-2 text-2xl ml-4 font-medium text-black hover:text-color-primary focus:text-color-secondary'
-            >
+            <Link href='/' className='flex items-center space-x-2 text-2xl ml-4'>
               <Image src='/images/logo.png' alt='' width={150} height={100} />
             </Link>
           </div>
@@ -23,7 +20,7 @@ export default function Footer() {
             <Link
               key={index}
               href={`#${item.toLocaleLowerCase()}`}
-              className='flex items-center space-x-2 text-xl ml-4 font-medium text-black hover:text-color-primary focus:text-color-secondary'
+              className='flex items-center space-x-2 text-xl ml-4 font-medium text-black hover:text-color-secondary focus:text-color-secondary'
             >
               {item}
             </Link>
@@ -32,11 +29,11 @@ export default function Footer() {
 
         <div className='ml-4 flex flex-col items-start justify-center'>
           <div className='flex space-x-5 text-black'>
-            <a className='hover:text-color-primary' href='/' target='_blank' rel='noreferrer'>
+            <a className='hover:text-color-secondary' href='/' target='_blank' rel='noreferrer'>
               <span className='sr-only'>Facebook</span>
               <Facebook />
             </a>
-            <a className='hover:text-color-primary' href='/' target='_blank' rel='noreferrer'>
+            <a className='hover:text-color-secondary' href='/' target='_blank' rel='noreferrer'>
               <span className='sr-only'>Instagram</span>
               <Instagram />
             </a>

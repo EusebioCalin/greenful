@@ -11,10 +11,7 @@ const About = async () => {
   return (
     <>
       <section className='max-w-screen-xl grid-cols-1 text-center leading-8'>
-        <div
-          id='get-started'
-          className='my-16 flex flex-col content-center items-center px-6 lg:px-0'
-        >
+        <div id='despre' className='my-16 flex flex-col content-center items-center px-6 lg:px-0'>
           <h1 className='font-semibold uppercase text-3xl text-black'>
             {text['content.sectionTitle']}
           </h1>

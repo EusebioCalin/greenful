@@ -1,7 +1,7 @@
 const Button = ({ text, onClick }: { text: string; onClick: () => void }) => {
   return (
     <button
-      className='bg-color-primary  hover:bg-primary-darker  py-2 px-4 rounded'
+      className='bg-color-ternary  hover:bg-color-fourth  py-2 px-4 rounde text-white'
       onClick={onClick}
     >
       {text}

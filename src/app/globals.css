@@ -6,15 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 240, 240, 240;
   --background-end-rgb: 240, 240, 240;
-  /* --color-primary: #dc2626; */
-  /* --color-primary-hover: #991b1b; */
-
-  --color-primary: #74B82E;
-  --color-secondary: #F0F0F0;
-  --color-ternary: #FFD700;
-  /* --color-4: #510A32; */
-  /* --color-5: #2D142C; */
-  /* --color-secondary: 111 114 185; */
+  --color-primary: #6C7B30;
+  --color-secondary: #98C285;
+  --color-ternary: #016081;
+  --color-fourth: #0092B8;
+  --color-fifth: #73CCD8;
+  --color-text: rgba(0, 0, 0, 0.87)
+    /* --color-secondary: 111 114 185; */
 }
 
 body {

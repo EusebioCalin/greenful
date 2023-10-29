@@ -12,7 +12,7 @@
     position: absolute;
     animation: rev-show-block 2s ease forwards;
     -webkit-animation: rev-show-block 2s ease forwards;
-    background: var(--color-secondary);
+    background: var(--color-ternary);
     left: 0%;
     top: 0%;
     width: 0%;
@@ -30,8 +30,8 @@
   }
 
   50% {
-    color: #fff;
-    color: var(--color-primary);
+    color: #000;
+    color: var(--color-ternary);
   }
 }
 

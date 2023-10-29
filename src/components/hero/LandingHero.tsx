@@ -3,11 +3,11 @@ import styles from './hero.module.scss'
 import Image from 'next/image'
 import { getImage } from '@/utils/utils'
 
-const imageSrc = '/images/imagine_fundal.jpg'
+const imageSrc = '/images/hero1.jpg'
 const LandingHero = async ({ text }: { text: string }) => {
   const { base64, img } = await getImage(imageSrc)
   return (
-    <section className='w-full text-left text-white'>
+    <section className='w-full text-left text-color-text'>
       <div className={`relative min-h-screen w-full ${styles.imageClipPath}`}>
         <div className='fixed h-full w-full'>
           <Image

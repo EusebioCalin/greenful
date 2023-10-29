@@ -20,7 +20,7 @@ const Testimonials = () => {
     <>
       <section className='max-w-screen-xl grid-cols-1 text-left md:px-0'>
         <div className='mt-16 flex flex-col content-center items-center'>
-          <h1 className='font-semibold leading-8 uppercase text-3xl text-color-secondary'>
+          <h1 className='font-semibold leading-8 uppercase text-3xl '>
             {texts['testimonials.title']}
           </h1>
 

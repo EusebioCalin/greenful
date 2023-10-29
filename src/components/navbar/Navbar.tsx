@@ -5,7 +5,7 @@ import Button from '@/components/button/AppButton'
 import Image from 'next/image'
 
 const Navbar = () => {
-  const navigation = ['About', 'FAQS', 'Contact']
+  const navigation = ['Despre', 'FAQS', 'Contact']
   const [scrollPosition, setScrollPosition] = useState<number>(0)
 
   const handleScroll = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
       className={`w-full fixed top-0 z-10 ${
         scrollPosition > 0.1 ? 'bg-color-secondary' : 'bg-transparent text-white'
       } 
-      transition ease-in-out transform hover:bg-color-secondary hover:text-black duration-500`}
+      transition ease-in-out transform hover:bg-color-secondary  duration-500`}
     >
       <nav className='container relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-0'>
         {/* Logo  */}
@@ -51,14 +51,14 @@ const Navbar = () => {
                     close()
                   }}
                 >
-                  <span className='flex items-center space-x-2 text-3xl pb-2 font-medium hover:text-color-primary'>
+                  <span className='flex items-center space-x-2 text-3xl pb-2 font-medium'>
                     <Image src='/images/logo.png' alt='' width={150} height={100} />
                   </span>
                 </div>
 
                 <Disclosure.Button
                   aria-label='Toggle Menu'
-                  className='px-2 py-1 ml-auto text-color-primary rounded-md lg:hidden hover:text-color-primary focus:text-color-primary focus:outline-none'
+                  className='px-2 py-1 ml-auto text-color-ternary rounded-md lg:hidden hover:text-color-ternary focus:text-color-ternary focus:outline-none'
                 >
                   <svg
                     className='w-6 h-6 fill-current'
@@ -86,7 +86,7 @@ const Navbar = () => {
                     {navigation.map((item, index) => (
                       <div
                         key={index}
-                        className='w-full py-2 rounded-md text-xl hover:text-color-primary focus:text-color-primary focus:outline-none'
+                        className='w-full py-2 rounded-md text-xl text-white hover:text-color-ternary focus:text-color-ternary focus:outline-none'
                         onClick={() => {
                           scrollToElement(item.toLocaleLowerCase())
                           close()
@@ -101,7 +101,7 @@ const Navbar = () => {
                         text={'Get Started'}
                         onClick={() => {
                           close()
-                          scrollToElement('get-started')
+                          scrollToElement('despre')
                         }}
                       />
                     </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 <div
                   onClick={() => scrollToElement(menu.toLocaleLowerCase())}
                   className='inline-block px-4 py-2 text-xl font-normal no-underline rounded-md 
-                  hover:text-color-primary focus:text-color-primary 
+                  text-white hover:text-color-ternary focus:text-color-ternary 
                   focus:outline-none'
                 >
                   {menu}
@@ -131,7 +131,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden mr-3 text-xl space-x-4 lg:flex nav__item'>
-          <Button text={'Get Started'} onClick={() => scrollToElement('get-started')} />
+          <Button text={'Contact us!'} onClick={() => scrollToElement('despre')} />
         </div>
       </nav>
     </div>
