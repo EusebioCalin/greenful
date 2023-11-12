@@ -3,12 +3,12 @@ import './globals.css'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 
-import { Oxanium } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
-const oxanium = Oxanium({
+const oxanium = Roboto({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400', '600'],
+  weight: ['400', '700'],
 })
 
 export const metadata: Metadata = {
@@ -28,6 +28,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
+      <head>
+        <link
+          rel='stylesheet'
+          href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+          integrity='sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY='
+          crossOrigin=''
+        />
+      </head>
       <body className={oxanium.className}>
         <header>
           <Navbar />

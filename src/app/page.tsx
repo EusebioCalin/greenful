@@ -7,6 +7,8 @@ import Values from '@/components/values/Values'
 import SecondaryHero from '@/components/secondaryHero/SecondaryHero'
 import FAQ from '@/components/faq/FAQ'
 import Services from '@/components/services/Services'
+import Contact from '@/components/contact/Contact'
+import { Gallery } from '@/components/gallery/Gallery'
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
       <Services />
       <Testimonials />
       <Values />
+      <Gallery />
       <FAQ />
+      <Contact />
     </main>
   )
 }

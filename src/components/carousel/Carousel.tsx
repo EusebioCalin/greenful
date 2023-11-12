@@ -11,18 +11,21 @@ import styles from './Carousel.module.scss'
 export default function Carousel({
   data,
   carouselType = 'navigation',
+  preventInteractionOnTransition = false,
 }: {
   data: Array<ReactNode>
-  carouselType?: 'navigation' | 'cards'
+  carouselType?: 'navigation' | 'cards' | 'galery'
+  preventInteractionOnTransition?: boolean
 }) {
   const renderedItems = data.map((elem, index) => (
     <SwiperSlide key={`swiper_${index}`}>{elem}</SwiperSlide>
   ))
 
-  if (carouselType === 'navigation') {
+  if (carouselType === 'navigation' || carouselType === 'galery') {
     return (
       <>
         <Swiper
+          preventInteractionOnTransition={preventInteractionOnTransition}
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
@@ -30,8 +33,9 @@ export default function Carousel({
           pagination={{
             clickable: true,
           }}
+          cssMode={carouselType === 'galery'}
           modules={[Navigation, Pagination]}
-          className={styles.mySwiper}
+          className={carouselType === 'galery' ? styles.mySwiperGallery : styles.mySwiper}
         >
           {renderedItems}
         </Swiper>

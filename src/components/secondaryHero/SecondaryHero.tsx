@@ -10,7 +10,7 @@ const SecondaryHero = async ({ text }: { text: string }) => {
 
   return (
     <>
-      <section className='w-full text-left text-color-text'>
+      <section className='w-full text-left text-white'>
         <div className={`min-h-[60vh] md:min-h-[50vh] relative w-full ${styles.imageClipPath}`}>
           <div className='fixed h-full w-full top-0 left-0'>
             <Image
@@ -27,8 +27,8 @@ const SecondaryHero = async ({ text }: { text: string }) => {
               unoptimized
             />
           </div>
-          <div className='absolute top-1/2 md:top-1/2 md:mt-1/2 md:w-1/2'>
-            <h1 className={cn('leading-10 uppercase text-5xl ml-8', styles.showAnim)}>{text}</h1>
+          <div className='absolute top-1/3 md:top-1/2 md:mt-1/2 md:w-1/2'>
+            <h1 className={cn('uppercase text-5xl ml-8 leading-10', styles.showAnim)}>{text}</h1>
           </div>
         </div>
       </section>

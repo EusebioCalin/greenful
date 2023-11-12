@@ -3,7 +3,7 @@ import Image from 'next/image'
 import HouseSvg from '../../assets/icons/house.svg'
 import CarSvg from '../../assets/icons/car.svg'
 import ChairSvg from '../../assets/icons/chair.svg'
-import MalletSvg from '../../assets/icons/mallet.svg'
+import CleaningMopSvg from '../../assets/icons/cleaning-mop.svg'
 import WindowSvg from '../../assets/icons/window.svg'
 import VacuumSvg from '../../assets/icons/vacuum.svg'
 import Vacuum2Svg from '../../assets/icons/vacuum2.svg'
@@ -15,7 +15,7 @@ import { ReactNode } from 'react'
 const iconsArray = [
   HouseSvg,
   VacuumSvg,
-  MalletSvg,
+  CleaningMopSvg,
   WindowSvg,
   Vacuum2Svg,
   BroomSvg,
