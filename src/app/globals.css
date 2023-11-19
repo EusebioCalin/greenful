@@ -3,26 +3,29 @@
 @tailwind utilities;
 
 :root {
-
+  --color: rgb(5, 5, 5);
+  --background-color: rgb(240, 240, 240);
   --color-primary: #6C7B30;
   --color-secondary: #98C285;
   --color-ternary: #016081;
   --color-fourth: #0092B8;
   --color-fifth: #73CCD8;
-  --color-text: rgba(0, 0, 0, 0.87)
-    /* --color-secondary: 111 114 185; */
+  --color-text: rgba(0, 0, 0, 0.87);
+  color-scheme: light;
 }
 
-/* Light mode styles */
+
+
+
 body {
-  background-color: rgb(240, 240, 240);
-  color: black;
+  color: var(--color);
+  background-color: var(--background-color);
 }
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(240, 240, 240);
-    color: dark;
+    color: var(--color);
+    background-color: var(--background-color);
   }
 }
