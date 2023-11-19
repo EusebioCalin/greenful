@@ -16,7 +16,7 @@ const FAQ = () => {
         const text = texts[`faq.text${index + 1}`]
         return (
           <>
-            <Disclosure.Button className='flex w-full justify-between items-center rounded-lg bg-color-secondary px-4 py-2 text-left text-white hover:text-color-ternary text-xl'>
+            <Disclosure.Button className='flex w-full justify-between items-center rounded-lg bg-color-secondary px-4 py-2 text-left text-black hover:text-color-ternary text-xl'>
               <span>{title}</span>
               {!open ? (
                 <ChevronDownIcon className='h-5 w-5 text-color-white' />

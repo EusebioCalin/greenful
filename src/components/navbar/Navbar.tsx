@@ -5,7 +5,7 @@ import Button from '@/components/button/AppButton'
 import Image from 'next/image'
 
 const Navbar = () => {
-  const navigation = ['Despre', 'FAQS', 'Contact']
+  const navigation = ['Despre', 'Galerie', 'FAQS']
   const [scrollPosition, setScrollPosition] = useState<number>(0)
 
   const handleScroll = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div
       className={`w-full fixed top-0 z-10 ${
-        scrollPosition > 0.1 ? 'bg-color-secondary' : 'bg-transparent text-white'
+        scrollPosition > 0.1 ? 'bg-color-secondary' : 'bg-transparent text-black'
       } 
       transition ease-in-out transform hover:bg-color-secondary  duration-500`}
     >
@@ -98,10 +98,10 @@ const Navbar = () => {
 
                     <div className='text-xl py-2'>
                       <Button
-                        text={'Get Started'}
+                        text={'Contactează-ne!'}
                         onClick={() => {
                           close()
-                          scrollToElement('despre')
+                          scrollToElement('contact')
                         }}
                       />
                     </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 <div
                   onClick={() => scrollToElement(menu.toLocaleLowerCase())}
                   className='inline-block px-4 py-2 text-xl font-normal no-underline rounded-md 
-                  text-white hover:text-color-ternary focus:text-color-ternary 
+                  text-black hover:text-color-ternary focus:text-color-ternary 
                   focus:outline-none'
                 >
                   {menu}
@@ -131,7 +131,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden mr-3 text-xl space-x-4 lg:flex nav__item'>
-          <Button text={'Contact us!'} onClick={() => scrollToElement('despre')} />
+          <Button text={'Contactează-ne!'} onClick={() => scrollToElement('contact')} />
         </div>
       </nav>
     </div>

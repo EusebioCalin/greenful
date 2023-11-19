@@ -17,6 +17,10 @@ export const Gallery = () => {
       leftImage: '/images/gallery_3_before.jpg',
       rightImage: '/images/gallery_3_after.jpg',
     },
+    {
+      leftImage: '/images/gallery_4_before.jpg',
+      rightImage: '/images/gallery_4_after.jpg',
+    },
   ]
   const carouselData = galleryData.map((elem, index) => (
     <ReactCompareImage
@@ -30,7 +34,7 @@ export const Gallery = () => {
   ))
 
   return (
-    <section id='contact' className='max-w-screen-xl  text-left'>
+    <section id='galerie' className='max-w-screen-xl text-left'>
       <div className='mt-16 flex flex-col content-center items-center'>
         <h1 className='font-semibold leading-8 uppercase text-3xl text-black'>
           {texts['gallery.title']}
